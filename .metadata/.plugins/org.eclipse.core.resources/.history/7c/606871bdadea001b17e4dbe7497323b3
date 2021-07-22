@@ -1,0 +1,15 @@
+package trans.constant;
+
+public class TransliterationConstant {
+
+	public static final String transliteration= "/transliteration";
+	public static final String REV_API_KEY= "REV-API-KEY";
+	public static final String REV_APP_ID= "REV-APP-ID";
+	public static final String sourceLanguage= "src_lang";
+	public static final String targetLanguage= "tgt_lang";
+	public static final String contentLanguage= "cnt_lang";
+	public static final String domain= "domain";
+	public static final String platform = "platform";
+	public static final String xForwardedFor = "X-Forwarded-For";
+	public static final String REV_APPNAME ="REV-APPNAME";
+}

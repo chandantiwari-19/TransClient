@@ -1,0 +1,28 @@
+package com.rev.t13n.beans;
+
+//import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModelProperty;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import io.quarkus.runtime.annotations.RegisterForReflection;
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+
+//@ApiModel
+@RegisterForReflection
+@Schema(description = "Transliteration Response Body")
+public class TransliterationResponseElement {
+//	@ApiModelProperty(required = true)
+	@Schema(description = "Response List" )
+	private List<TransliterationResponseNode> responseList = new LinkedList<>();
+	
+	
+	public List<TransliterationResponseNode> getResponseList() {
+		return responseList;
+	}
+	public void setResponseList(List<TransliterationResponseNode> responseList) {
+		this.responseList = responseList;
+	}
+
+}

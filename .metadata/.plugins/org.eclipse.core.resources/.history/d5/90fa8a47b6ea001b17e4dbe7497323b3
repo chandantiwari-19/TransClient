@@ -1,0 +1,47 @@
+package com.rev.t13n.beans;
+
+
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import io.quarkus.runtime.annotations.RegisterForReflection;
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+
+@RegisterForReflection
+public class TransliterationResponseNode {
+	@Schema(description = "Input string in request." )
+	private String inString;
+
+	@Schema(description = "Results generated in target language.")
+	private List<String> outString;
+	@Schema(description = "Tells about status of results. If its value is 2, then results are properly generated from " +
+			"transliteration engine.")
+	private int apiStatus;
+	
+	public TransliterationResponseNode(String inString, List<String> outString, int apiStatus) {
+		this.inString = inString;
+		this.outString = outString;
+		this.apiStatus = apiStatus;
+	}
+	public String getInString() {
+		return inString;
+	}
+	public void setInString(String inString) {
+		this.inString = inString;
+	}
+	public List<String> getOutString() {
+		return outString;
+	}
+	public void setOutString(List<String> outString) {
+		this.outString = outString;
+	}
+	public int getApiStatus() {
+		return apiStatus;
+	}
+	public void setApiStatus(int apiStatus) {
+		this.apiStatus = apiStatus;
+	}
+	
+
+}

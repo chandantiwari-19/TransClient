@@ -1,0 +1,102 @@
+package trans.model;
+
+public class TransliterationPayload {
+
+
+//	@ApiModelProperty(required = true)
+//	@NotNull
+	@Schema(required = true)
+	private String[] data;
+	
+//	private String targetLang;
+	
+//	private String sourceLanguage;
+	
+	private String userProvidedUUID;
+	
+	private Boolean abbreviate;
+	@Schema(required = false, defaultValue = "1")
+	private Integer noOfSuggestions;
+
+	private Boolean isBulk;
+	
+	private Boolean convertNumber;
+	
+	private Boolean ignoreTaggedEntities;
+	
+	public String[] getData() {
+		return data;
+	}
+
+	public void setData(String[] data) {
+		this.data = data;
+	}
+/*
+	public String getTargetLang() {
+		return targetLang;
+	}
+
+	public void setTargetLang(String targetLang) {
+		this.targetLang = targetLang;
+	}
+
+	public String getSourceLanguage() {
+		return sourceLanguage;
+	}
+
+	public void setSourceLanguage(String sourceLanguage) {
+		this.sourceLanguage = sourceLanguage;
+	}
+	
+	*/
+
+	public String getUserProvidedUUID() {
+		return userProvidedUUID;
+	}
+
+	public void setUserProvidedUUID(String userProvidedUUID) {
+		this.userProvidedUUID = userProvidedUUID;
+	}
+
+	public Boolean getAbbreviate() {
+		return abbreviate;
+	}
+
+	public void setAbbreviate(Boolean abbreviate) {
+		this.abbreviate = abbreviate;
+	}
+
+	public Integer getNoOfSuggestions() {
+		return noOfSuggestions;
+	}
+
+	public void setNoOfSuggestions(Integer noOfSuggestions) {
+		this.noOfSuggestions = noOfSuggestions;
+	}
+
+	public Boolean getIsBulk() {
+		return isBulk;
+	}
+
+	public void setIsBulk(Boolean isBulk) {
+		this.isBulk = isBulk;
+	}
+
+	public Boolean getConvertNumber() {
+		return convertNumber;
+	}
+
+	public void setConvertNumber(Boolean convertNumber) {
+		this.convertNumber = convertNumber;
+	}
+
+	public Boolean getIgnoreTaggedEntities() {
+		return ignoreTaggedEntities;
+	}
+
+	public void setIgnoreTaggedEntities(Boolean ignoreTaggedEntities) {
+		this.ignoreTaggedEntities = ignoreTaggedEntities;
+	}
+	
+
+}

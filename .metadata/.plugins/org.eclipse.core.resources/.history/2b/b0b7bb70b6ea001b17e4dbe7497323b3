@@ -1,0 +1,20 @@
+package trans.response;
+
+//import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModelProperty;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class TransliterationResponseElement {
+	private List<TransliterationResponseNode> responseList = new LinkedList<>();
+	
+	
+	public List<TransliterationResponseNode> getResponseList() {
+		return responseList;
+	}
+	public void setResponseList(List<TransliterationResponseNode> responseList) {
+		this.responseList = responseList;
+	}
+
+}

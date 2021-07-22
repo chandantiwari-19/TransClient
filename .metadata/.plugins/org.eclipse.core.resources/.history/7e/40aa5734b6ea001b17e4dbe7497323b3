@@ -1,0 +1,5 @@
+package trans.response;
+
+public class TransliterationResponseNode {
+
+}

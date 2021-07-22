@@ -1,0 +1,5 @@
+package trans.model;
+
+public class TransliterationPayload {
+
+}

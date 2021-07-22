@@ -1,0 +1,46 @@
+package com.rev.t13n.beans;
+
+//import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModelProperty;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import io.quarkus.runtime.annotations.RegisterForReflection;
+//@ApiModel
+@RegisterForReflection
+public class TransliterationResponse {
+//	@ApiModelProperty(required = true)
+	TransliterationResponseElement transliterationResponseElement;
+	
+	public TransliterationResponse() {
+		this.transliterationResponseElement = new TransliterationResponseElement();
+	}
+	
+//	@ApiModelProperty(required = false)
+
+	private String uuid;
+	
+	private String preProcessorResponse;
+
+	public String getUuid() {
+		return uuid;
+	}
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
+	}
+	public TransliterationResponseElement getTransliterationResponseElement() {
+		return transliterationResponseElement;
+	}
+	public void setResponseList(TransliterationResponseElement transliterationResponseElement) {
+		this.transliterationResponseElement = transliterationResponseElement;
+	}
+	public String getPreProcessorResponse() {
+		return preProcessorResponse;
+	}
+	public void setPreProcessorResponse(String preProcessorResponse) {
+		this.preProcessorResponse = preProcessorResponse;
+	}
+	
+
+}
